@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    background: #1C1C1C;
+    font-family: 'Karla', sans-serif;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+
+/***** Typography *****/
+
+h1 {
+    font-size: 2.3em;
+    margin: 10px 0 20px;
+    text-align: left;
+    font-weight: 700;
+}
+
+h1 span {
+    color: #4ADF86;
+}
+
+p {
+    margin-bottom: 50px;
+}
+
+.container {
+    display: block;
+    background: #1F2937;
+    border: 5px solid #ffffff;
+    border-radius: 12px;
+    margin: 0;
+    padding: 20px;
+    width: 550px;
+}
+
+
+
+/********** Buttons **********/
+
+.btn-generate {
+    background-color:#10b981;
+    border: none;
+    border-radius:6px;
+    color: #ffffff;
+    font-size: 16px;
+    height:42px;
+    width:191px;
+    margin-bottom: 35px;
+    user-select: none;
+}
+
+.btn-generate:hover {
+    background-color: #0A865D;
+    color: #ffffff;
+}
+
+.result-container .btn {
+    border-radius: 4px;
+    border: none;
+    background-color: #10b981;
+    color: #ffffff;
+    font-size: 20px;
+    height: 35px;
+    width: 33px;
+    user-select: none;
+}
+
+.result-container .btn:hover {
+    background-color: #0A865D;
+    color: #ffffff;
+}
+
+/********** Password Settings **********/
+.result-container {
+    background-color: #273549;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #55F991;
+    font-size: 17px;
+    letter-spacing: 1px;
+    text-align: center;
+    height: 50px;
+    margin-top: 35px;
+    position: relative;
+    padding: 0 20px; /* Add padding to create space around the result and button */
+}
+
+.result-container #result {
+    word-wrap: break-word;
+    max-width: calc(90% - 40px);
+}
+
+.setting {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 8px;
+}
+
+input[type="number"],
+select:focus,
+textarea {
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #273549;
+    border: 2px solid #10b981;
+    border-radius: 4px;
+}
+
+/********** Media Queries **********/
+
+@media (max-width: 798px) {
+    h1 {
+        font-size: 2.1em;
+    }
+    .result-container {
+        padding: 0 10px; /* Adjust padding for smaller screens */
+    }
+}
+
+@media (max-width: 340px) {
+    h1 {
+        font-size: 1.5em;
+    }
+    .result-container {
+        padding: 0 5px; /* Further adjust padding for even smaller screens */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
